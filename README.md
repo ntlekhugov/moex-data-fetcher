@@ -8,13 +8,15 @@ A reusable Python module for fetching data from the Moscow Exchange (MOEX) Infor
 MOEX data fetcher/
 ├── src/                  # Source code
 │   ├── moex_api_client.py        # Core API client
-│   └── fetch_moex_iss_bond_indices.py  # Bond indices fetcher
+│   ├── fetch_moex_iss_bond_indices.py  # Bond indices fetcher
+│   └── moex_bond_data.py         # Russian bond data fetcher
 ├── examples/             # Example usage scripts
 │   ├── example_moex_api_usage.py       # Basic API usage examples
 │   ├── fetch_money_market_instruments.py  # Money market data fetcher
 │   ├── fetch_rgbi_index.py              # Government bond index fetcher
 │   ├── fetch_rucbhytr_index.py          # High-yield corporate bond index fetcher
-│   └── fetch_rucbitr_index.py           # Corporate bond index fetcher
+│   ├── fetch_rucbitr_index.py           # Corporate bond index fetcher
+│   └── fetch_corp_bonds_data.py         # Russian domestic bond data fetcher
 ├── data/                 # Directory for storing fetched data
 ├── tests/                # Test scripts (to be implemented)
 └── docs/                 # Documentation (to be implemented)
@@ -64,6 +66,12 @@ MOEX data fetcher/
 - **Bond Indices**: RGBITR, RUCBITR, RUGBITR, etc.
 - **Individual Securities**: Stocks, bonds, ETFs
 - **Money Market Instruments**: MOEXREPO, etc.
+- **Russian Domestic Bonds**: Detailed bond data including:
+  - Instrument parameters
+  - Daily trading results
+  - Coupon payment schedules
+  - Amortization schedules
+  - Offer (put/call) information
 
 ## Authentication
 
@@ -83,11 +91,32 @@ This module follows strict data integrity principles:
 
 ## Examples
 
-See the `examples/` directory for specific use cases and data fetching scripts.
+See the `examples/` directory for specific use cases and data fetching scripts:
+
+### General Market Data
+
+- `example_moex_api_usage.py`: Basic API usage examples
+- `fetch_money_market_instruments.py`: Money market data fetcher
+
+### Bond Indices
+
+- `fetch_rgbi_index.py`: Government bond index fetcher
+- `fetch_rucbhytr_index.py`: High-yield corporate bond index fetcher
+- `fetch_rucbitr_index.py`: Corporate bond index fetcher
+
+### Russian Domestic Bonds
+
+- `fetch_corp_bonds_data.py`: Fetches detailed data for Russian domestic bonds, including:
+  - Instrument parameters
+  - Daily trading results
+  - Coupon payment schedules
+  - Amortization schedules
+  
+  This example specifically targets bonds issued by Russian entities within Russia for the period from September 19, 2022, to April 4, 2025.
 
 ## License
 
-**IMPORTANT**: This project is available for **personal use only**. Commercial use is prohibited without explicit written permission. See the [LICENSE](LICENSE) file for details.
+This project is for personal use only. Commercial use requires explicit permission from the author.
 
 ## Acknowledgments
 
