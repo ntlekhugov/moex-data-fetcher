@@ -20,8 +20,12 @@ setup(
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: Free for non-commercial use",
         "Operating System :: OS Independent",
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "Intended Audience :: Financial and Insurance Industry",
+        "Topic :: Office/Business :: Financial :: Investment",
     ],
     python_requires=">=3.8",
     install_requires=[
