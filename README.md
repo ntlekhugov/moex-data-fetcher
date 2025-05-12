@@ -87,7 +87,7 @@ See the `examples/` directory for specific use cases and data fetching scripts.
 
 ## License
 
-This project is available for personal and commercial use.
+**IMPORTANT**: This project is available for **personal use only**. Commercial use is prohibited without explicit written permission. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
