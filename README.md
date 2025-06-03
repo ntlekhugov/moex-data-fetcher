@@ -7,9 +7,11 @@ A reusable Python module for fetching data from the Moscow Exchange (MOEX) Infor
 ```
 MOEX data fetcher/
 ├── src/                  # Source code
-│   ├── moex_api_client.py        # Core API client
-│   ├── fetch_moex_iss_bond_indices.py  # Bond indices fetcher
-│   └── moex_bond_data.py         # Russian bond data fetcher
+│   └── moex_data_fetcher/
+│       ├── api/
+│       │   └── client.py          # Core API client
+│       └── bonds/
+│           └── data.py           # Russian bond data fetcher
 ├── examples/             # Example usage scripts
 │   ├── example_moex_api_usage.py       # Basic API usage examples
 │   ├── fetch_money_market_instruments.py  # Money market data fetcher
@@ -43,7 +45,7 @@ MOEX data fetcher/
 
 2. Basic usage:
    ```python
-   from src.moex_api_client import MOEXDataSource
+   from moex_data_fetcher.api.client import MOEXDataSource
    
    # Initialize the client
    moex = MOEXDataSource()

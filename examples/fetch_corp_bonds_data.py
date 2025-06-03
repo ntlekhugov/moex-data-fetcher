@@ -20,7 +20,7 @@ from pathlib import Path
 
 # Add the src directory to the path so we can import our modules
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-from src.moex_bond_data import MOEXBondData
+from moex_data_fetcher.bonds.data import MOEXBondData
 
 # Configure logging
 logging.basicConfig(

@@ -18,7 +18,7 @@ script_dir = Path(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(str(script_dir))
 
 # Import the MOEX data source
-from src.moex_api_client import MOEXDataSource
+from moex_data_fetcher.api.client import MOEXDataSource
 
 # Configure logging
 logging.basicConfig(

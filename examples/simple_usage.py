@@ -18,7 +18,7 @@ project_dir = script_dir.parent
 sys.path.append(str(project_dir))
 
 # Import the MOEX data source
-from src.moex_api_client import MOEXDataSource
+from moex_data_fetcher.api.client import MOEXDataSource
 
 def main():
     """Simple example to fetch IMOEX (Moscow Exchange Index) data."""
